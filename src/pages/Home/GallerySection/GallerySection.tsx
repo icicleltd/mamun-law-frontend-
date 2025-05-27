@@ -49,7 +49,7 @@ const GallerySection: React.FC = () => {
   }, [isMobile]);
 
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen w-full relative overflow-hidden">
+    <div className="flex flex-col lg:flex-row w-full relative overflow-hidden">
       {/* Background image using Next.js Image component properly */}
       <div className="absolute inset-0 z-0">
         <img
@@ -71,7 +71,7 @@ const GallerySection: React.FC = () => {
 
       {/* Content section with responsive positioning */}
       <div
-        className="w-full lg:w-1/2 pt-16 sm:pt-20 md:pt-32 lg:pt-56 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-start relative z-20 min-h-screen lg:min-h-auto"
+        className="w-full lg:w-1/2 pt-16 sm:pt-20 md:pt-32 lg:pt-56 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-start relative z-20  "
         style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
         data-aos="slide-right"
         data-aos-duration="1200"
@@ -140,7 +140,7 @@ const GallerySection: React.FC = () => {
         </div>
 
         {/* Optional: Add mobile-specific call-to-action */}
-        <div className="mt-8 sm:mt-12 lg:hidden">
+        {/* <div className="mt-8 sm:mt-12 lg:hidden">
           <div className="text-center" data-aos="fade-up" data-aos-delay="1400">
             <p className="text-sm text-gray-600 mb-4">
               Swipe up to explore more sections
@@ -151,7 +151,7 @@ const GallerySection: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Right section - Hidden on mobile, visible on desktop */}
