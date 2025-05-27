@@ -78,10 +78,7 @@ const Login: React.FC = () => {
     setShowPassword(!showPassword);
   };
 
-  const handleSocialLogin = (provider: "google" | "facebook"): void => {
-    console.log(`${provider} login clicked`);
-    // Handle social login logic here
-  };
+  
 
   const handleForgotPassword = (): void => {
     console.log("Forgot password clicked");
