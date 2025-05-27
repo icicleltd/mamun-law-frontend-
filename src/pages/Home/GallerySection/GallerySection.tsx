@@ -62,7 +62,7 @@ const GallerySection: React.FC = () => {
         />
       </div>
 
-      {/* Animated background overlay */}
+      {/* Animated background overlay  */}
       <div
         className="absolute inset-0 bg-blue-900/10 z-10"
         data-aos="fade"
