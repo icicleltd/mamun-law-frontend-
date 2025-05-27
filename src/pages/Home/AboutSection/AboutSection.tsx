@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 import { Phone } from "lucide-react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
 // @ts-ignore
