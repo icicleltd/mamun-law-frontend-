@@ -4,7 +4,7 @@ import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 const StickySocialIcons: React.FC = () => {
   return (
-    <div className="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 hidden lg:block">
+    <div className="fixed right-16 top-[90%] transform -translate-y-1/2 z-50 hidden lg:block">
       <div className="flex flex-col space-y-2">
         {/* Facebook */}
         <Link

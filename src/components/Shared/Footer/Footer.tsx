@@ -125,32 +125,12 @@ const Footer: React.FC = () => {
               &copy; {currentYear} Mamun&lsquo;Law. All rights reserved.
             </p>
             <div className="mt-2 md:mt-0">
-              <ul className="flex space-x-4 text-sm text-gray-400">
-                <li>
-                  <Link
-                    to="/privacy"
-                    className="hover:text-white transition-colors"
-                  >
-                    Privacy Policy
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/terms"
-                    className="hover:text-white transition-colors"
-                  >
-                    Terms of Service
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/faq"
-                    className="hover:text-white transition-colors"
-                  >
-                    FAQ
-                  </Link>
-                </li>
-              </ul>
+              <button className="hover:text-orange-500 transition-colors duration-300">
+                Powred by{" "}
+                <Link to={"https://iciclecorporation.com/"} target="_blank">
+                  <span className=" ">Icicle Corporation</span>
+                </Link>
+              </button>
             </div>
           </div>
         </div>

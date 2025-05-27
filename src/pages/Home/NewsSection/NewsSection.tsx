@@ -54,7 +54,7 @@ const NewsSection: React.FC = () => {
             <div className="flex items-center mb-3">
               <div className="w-8 h-0.5 bg-[#FF5C00] mr-3"></div>
               <p className="text-[#FF5C00] text-sm font-bold uppercase tracking-wider">
-                INTERVIEWS
+                VIDEOS
               </p>
             </div>
             <h2 className=" text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -108,7 +108,7 @@ const NewsSection: React.FC = () => {
                           height="100%"
                           src={`https://www.youtube.com/embed/${interview.videoId}`}
                           title={interview.title}
-                          className="w-full h-[200px] md:h-[250px] lg:h-[350px] object-cover transition-transform duration-700 group-hover:scale-105"
+                          className="w-full h-[200px] md:h-[250px] lg:h-[250px] "
                           allowFullScreen
                         />
                       </div>
