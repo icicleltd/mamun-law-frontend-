@@ -69,7 +69,6 @@ const GallerySection: React.FC = () => {
         data-aos-duration="1500"
       ></div>
 
-      {/* Content section with responsive positioning */}
       <div
         className="w-full lg:w-1/2 pt-16 sm:pt-20 md:pt-32 lg:pt-56 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-start relative z-20  "
         style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
