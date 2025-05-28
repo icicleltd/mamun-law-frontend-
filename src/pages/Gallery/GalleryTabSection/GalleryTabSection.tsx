@@ -95,7 +95,7 @@ const GalleryTabSection: React.FC = () => {
         <h1 className="text-xl md:text-2xl font-bold mb-6">Gallery</h1>
 
         <p className="mb-8 text-lg">
-          Khaitan & Co has a robust team of lawyers with rich experience across
+          Mamun Law has a robust team of lawyers with rich experience across
           various areas of work. Find one who specialises in what you need.
         </p>
 

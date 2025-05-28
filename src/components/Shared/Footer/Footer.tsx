@@ -126,7 +126,7 @@ const Footer: React.FC = () => {
             </p>
             <div className="mt-2 md:mt-0">
               <button className="hover:text-orange-500 transition-colors duration-300">
-                Powred by{" "}
+                Powered by{" "}
                 <Link to={"https://iciclecorporation.com/"} target="_blank">
                   <span className=" ">Icicle Corporation</span>
                 </Link>
