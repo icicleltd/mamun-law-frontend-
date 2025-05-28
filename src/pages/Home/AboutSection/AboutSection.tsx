@@ -125,7 +125,7 @@ const AboutSection: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              Godwit Law Office excels in navigating complex immigration
+              Mamun Law Office excels in navigating complex immigration
               processes for individuals and families seeking new beginnings in
               Canada. Our expertise spans across various immigration pathways,
               ensuring personalized solutions that align with our rigorous
