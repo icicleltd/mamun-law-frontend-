@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import logo from "../../../assets/images/logo.jpeg";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
-import { Facebook } from "lucide-react";
 
 // Contact Modal Types
 interface ContactFormData {
