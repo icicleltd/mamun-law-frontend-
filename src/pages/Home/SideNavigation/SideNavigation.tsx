@@ -162,7 +162,7 @@ const SideNavigation: React.FC = () => {
   return (
     <div 
       ref={navRef}
-      className={`fixed right-12 top-1/2 transform -translate-y-1/2 z-40 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}
+      className={`fixed right-12 top-1/2 transform -translate-y-1/2 z-10 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20'}`}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       style={{

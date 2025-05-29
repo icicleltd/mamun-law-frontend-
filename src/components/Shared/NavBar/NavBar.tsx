@@ -3,7 +3,6 @@ import logo from "../../../assets/images/logo.jpeg";
 import { Link } from "react-router-dom";
 import Swal from "sweetalert2";
 import { Facebook } from "lucide-react";
-// import { FaFacebook, FaInstagram, FaYoutube } from "react-icons/fa6";
 
 // Contact Modal Types
 interface ContactFormData {
@@ -47,29 +46,6 @@ const ContactModal: React.FC<{
 
   const validateForm = (): boolean => {
     const newErrors: Partial<ContactFormData> = {};
-
-    // if (!formData.name.trim()) {
-    //   newErrors.name = "Name is required";
-    // }
-
-    // if (!formData.email.trim()) {
-    //   newErrors.email = "Email is required";
-    // } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
-    //   newErrors.email = "Email is invalid";
-    // }
-
-    // if (!formData.phone.trim()) {
-    //   newErrors.phone = "Phone number is required";
-    // } else if (
-    //   !/^\+?[0-9]{10,15}$/.test(formData.phone.replace(/[\s-]/g, ""))
-    // ) {
-    //   newErrors.phone = "Phone number is invalid";
-    // }
-
-    // if (!formData.message.trim()) {
-    //   newErrors.message = "Message is required";
-    // }
-
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -246,34 +222,22 @@ const NavBar: React.FC = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
-    // Function to handle scroll events
     const handleScroll = () => {
       const currentScrollPos = window.scrollY;
-
-      // Set visible state based on scroll direction
-      // visible when scrolling up or at the top of the page
       setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
-
-      // Update previous scroll position
       setPrevScrollPos(currentScrollPos);
     };
 
-    // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener
     return () => window.removeEventListener("scroll", handleScroll);
   }, [prevScrollPos]);
 
   // Handle form submission
   const handleContactSubmit = (data: ContactFormData) => {
     console.log("Form submitted:", data);
-    // Process the form data here (e.g., send to API)
     setContactModalOpen(false);
-    setMobileMenuOpen(false); // Close mobile menu if open
-    // You could add a toast notification here
+    setMobileMenuOpen(false);
     Swal.fire({
-      //   position: "top-end",
       icon: "success",
       title: "Thanks For Your Submissions !!!",
       showConfirmButton: false,
@@ -320,28 +284,6 @@ const NavBar: React.FC = () => {
             </a>
 
             <div className="flex items-center space-x-3 group">
-              {/* <Link to={"/"} className="relative overflow-hidden">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-blue-50/10 backdrop-blur-sm border border-blue-300/30 hover:border-blue-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-blue-500/25 group/facebook">
-                  <FaFacebook className="text-blue-500 hover:text-white text-lg transition-colors duration-300 group-hover/facebook:text-white" />
-                  <div className="absolute inset-0 bg-blue-600 rounded-full scale-0 group-hover/facebook:scale-100 transition-transform duration-300 -z-10"></div>
-                </div>
-              </Link> */}
-
-              {/* <Link to={"/"} className="relative overflow-hidden">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-red-50/10 backdrop-blur-sm border border-red-300/30 hover:border-red-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-red-500/25 group/youtube">
-                  <FaYoutube className="text-red-500 hover:text-white text-lg transition-colors duration-300 group-hover/youtube:text-white" />
-                  <div className="absolute inset-0 bg-red-600 rounded-full scale-0 group-hover/youtube:scale-100 transition-transform duration-300 -z-10"></div>
-                </div>
-              </Link> */}
-
-              {/* <Link to={"/"} className="relative overflow-hidden">
-                <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-purple-50/10 to-pink-50/10 backdrop-blur-sm border border-purple-300/30 hover:border-purple-400 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-500/25 group/instagram">
-                  <FaInstagram className="text-purple-500 hover:text-white text-lg transition-colors duration-300 group-hover/instagram:text-white" />
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600 to-pink-600 rounded-full scale-0 group-hover/instagram:scale-100 transition-transform duration-300 -z-10"></div>
-                </div>
-              </Link> */}
-
-              {/* Optional: Animated separator line */}
               <div className="w-px h-6 bg-gradient-to-b from-transparent via-blue-300/50 to-transparent ml-2"></div>
             </div>
           </div>
@@ -363,10 +305,6 @@ const NavBar: React.FC = () => {
 
           {/* Right side - Buttons */}
           <div className="flex items-center space-x-2">
-            {/* <button className="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 xl:px-6 py-2 text-sm xl:text-base transition-colors duration-200 whitespace-nowrap">
-              APPOINTMENT
-            </button> */}
-
             <button
               className="border border-white text-white font-medium px-4 xl:px-6 py-2 text-sm xl:text-base transition-colors duration-200 hover:bg-white hover:text-blue-600 whitespace-nowrap"
               onClick={() => setContactModalOpen(true)}
@@ -435,9 +373,9 @@ const NavBar: React.FC = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Dropdown */}
+          {/* Mobile Menu Dropdown - FIXED */}
           {mobileMenuOpen && (
-            <div className="bg-blue-900/95 w-[90%] z-[100]  backdrop-blur-sm border-t border-blue-800">
+            <div className="absolute top-full left-0 right-0 bg-blue-900/95 backdrop-blur-sm border-t border-blue-800 z-50">
               <div className="px-4 py-3 space-y-3">
                 {/* Navigation Links */}
                 <a
@@ -452,34 +390,41 @@ const NavBar: React.FC = () => {
                   className="block text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200"
                   onClick={closeMobileMenu}
                 >
-                  ABOU
+                  ABOUT
                 </a>
                 <a
                   href="#"
                   className="block text-white hover:text-blue-300 font-medium py-2 transition-colors duration-200"
                   onClick={closeMobileMenu}
                 >
-                  <Facebook className="inline-block mr-1" />
+                  CONTACT
                 </a>
 
-                {/* Mobile Buttons */}
-                <div className="pt-3 space-y-3 border-t border-blue-800">
-                  <button
-                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-3 text-sm transition-colors duration-200"
-                    onClick={closeMobileMenu}
-                  >
-                    BOOK AN APPOINTMENT
-                  </button>
+                {/* Social Media Link */}
+                {/* <div className="py-2">
+                  <Facebook className="inline-block text-white hover:text-blue-300 transition-colors duration-200" size={20} />
+                </div> */}
 
+                {/* Mobile Buttons */}
+                <div className="pt-3 space-y-3 border-t border-blue-800 py-8">
                   <button
-                    className="w-full border border-white text-white font-medium px-4 py-3 text-sm transition-colors duration-200 hover:bg-white hover:text-blue-600"
+                    className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-3 text-sm transition-colors duration-200 rounded"
                     onClick={() => {
                       setContactModalOpen(true);
                       closeMobileMenu();
                     }}
                   >
-                    CONTACT
+                    BOOK AN APPOINTMENT
                   </button>
+
+                  <Link to={"/login"} className="block">
+                    <button
+                      className="w-full border border-white text-white font-medium px-4 py-3 text-sm transition-colors duration-200 hover:bg-white hover:text-blue-600 rounded"
+                      onClick={closeMobileMenu}
+                    >
+                      LOGIN
+                    </button>
+                  </Link>
                 </div>
               </div>
             </div>
