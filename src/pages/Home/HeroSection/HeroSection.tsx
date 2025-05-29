@@ -45,7 +45,7 @@ const HeroSection: React.FC = () => {
 
       {/* Left content section with white background at 50% opacity */}
       <div
-        className="w-full lg:w-1/2 pt-16 sm:pt-20 md:pt-24 lg:pt-32 px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col justify-start relative min-h-screen lg:min-h-auto"
+        className="w-full lg:w-1/2 pt-40 sm:pt-20 md:pt-24 lg:pt-32 px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col justify-start relative min-h-screen lg:min-h-auto"
         style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
         data-aos="slide-right"
         data-aos-duration="1200"
