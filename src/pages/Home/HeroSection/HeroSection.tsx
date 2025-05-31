@@ -70,11 +70,11 @@ const HeroSection: React.FC = () => {
           data-aos="fade-up"
           data-aos-delay="800"
         >
-          Our expertise across diverse practice areas and sectors covers varied
-          and nuanced needs. Backed by over 100 years of legal heritage,
-          delighted clients from across the globe, and topical, commercial and
-          specialised services, we deliver the best legal solutions for our
-          clients.
+          Our law firm includes a panel of experienced legal professionals,
+          including advocates, barristers, and solicitors, who specialize in
+          tax, VAT, labor, corporate, civil, criminal, writ, and family law. We
+          have extensive experience in handling a wide range of legal matters,
+          with a high success rate.
         </p>
 
         <div

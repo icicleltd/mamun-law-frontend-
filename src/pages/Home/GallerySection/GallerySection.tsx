@@ -49,7 +49,7 @@ const GallerySection: React.FC = () => {
   }, [isMobile]);
 
   return (
-    <div className="flex flex-col lg:flex-row w-full relative overflow-hidden">
+    <div className="flex flex-col lg:flex-row w-full relative  overflow-hidden">
       {/* Background image using Next.js Image component properly */}
       <div className="absolute inset-0 z-0">
         <img
@@ -70,7 +70,7 @@ const GallerySection: React.FC = () => {
       ></div>
 
       <div
-        className="w-full lg:w-1/2 pt-16 sm:pt-20 md:pt-32 lg:pt-56 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-start relative z-20  "
+        className="w-full lg:w-1/2 pt-16 pb-5 sm:pt-20 md:pt-32 lg:pt-56 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-start relative z-20  "
         style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
         data-aos="slide-right"
         data-aos-duration="1200"
@@ -95,9 +95,10 @@ const GallerySection: React.FC = () => {
           data-aos="fade-up"
           data-aos-delay="800"
         >
-          High-quality portraits of partners and senior professionals with brief
-          quotes on their legal philosophy. Empowering the next generation of
-          legal leaders—combining expertise with a culture of growth.
+          Every member of our firm is known for their transparency, competence,
+          and dedication, which has earned us a strong reputation. Many of the
+          cases handled by our firm have been published in legal reports such as
+          DLR (Dhaka Law Reports) and BLT (Bangladesh Legal Times).
         </p>
 
         <div
