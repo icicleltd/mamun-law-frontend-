@@ -125,11 +125,11 @@ const AboutSection: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              Mamun Law Office excels in navigating complex immigration
-              processes for individuals and families seeking new beginnings in
-              Canada. Our expertise spans across various immigration pathways,
-              ensuring personalized solutions that align with our rigorous
-              standards of excellence.
+              I am Md. Abdullah Al Mamun, an Advocate of the Supreme Court of
+              Bangladesh and the head of this law firm. I was born into a
+              respected Muslim family in the village of Beneyali, under
+              Jhikargacha Upazila of Jessore District. My family background is
+              primarily agricultural.
             </p>
 
             <div className="space-y-3">
