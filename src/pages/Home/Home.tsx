@@ -5,15 +5,17 @@ import SideNavigation from "./SideNavigation/SideNavigation";
 import GallerySection from "./GallerySection/GallerySection";
 import NewsSection from "./NewsSection/NewsSection";
 import StickySocialIcons from "./StickySocialIcons/StickySocialIcons"; // Import the new component
+import TeamSection from "./TeamSection/TeamSection";
+// import TeamS
 
 const Home: React.FC = () => {
   return (
     <div className="relative">
       <SideNavigation />
-      
+
       {/* Sticky Social Media Icons */}
       <StickySocialIcons />
-      
+
       <section id="hero">
         <div data-aos="fade-up" data-aos-duration="1000">
           <HeroSection />
@@ -40,6 +42,9 @@ const Home: React.FC = () => {
         <div data-aos="fade-left" data-aos-delay="100" data-aos-duration="1000">
           <NewsSection />
         </div>
+      </section>
+      <section>
+        <TeamSection />
       </section>
     </div>
   );
