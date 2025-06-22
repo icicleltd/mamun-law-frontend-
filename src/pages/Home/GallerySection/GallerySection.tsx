@@ -56,9 +56,9 @@ const GallerySection: React.FC = () => {
           src={BannnerImg}
           alt="Gallery Background"
           //   fill
-          className="object-cover"
+          className="object-cover w-full h-full"
           //   priority
-          sizes="100vw"
+          // sizes="100vw"
         />
       </div>
 
@@ -70,19 +70,19 @@ const GallerySection: React.FC = () => {
       ></div>
 
       <div
-        className="w-full lg:w-1/2 pt-16 pb-5 sm:pt-20 md:pt-32 lg:pt-56 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-start relative z-20  "
+        className="w-full lg:w-1/2 pt-16 pb-5 sm:pt-20 md:pt-32  lg:pt-56 px-4 sm:px-6 md:px-8 lg:px-12 flex flex-col justify-start relative z-20  "
         style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
         data-aos="slide-right"
         data-aos-duration="1200"
       >
-        <div className="mb-3 sm:mb-4" data-aos="fade-down" data-aos-delay="400">
+        <div className="mb-3 ml-0 md:ml-20 sm:mb-4" data-aos="fade-down" data-aos-delay="400">
           <span className="text-blue-600 font-medium text-sm sm:text-base lg:text-lg">
             Gallery
           </span>
         </div>
 
         <h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-blue-800 mb-4 sm:mb-5 md:mb-6 leading-tight"
+          className="text-2xl ml-0 md:ml-20 sm:text-3xl md:text-4xl lg:text-4xl xl:text-5xl font-bold text-blue-800 mb-4 sm:mb-5 md:mb-6 leading-tight"
           data-aos="fade-up"
           data-aos-delay="600"
           data-aos-duration="1000"
@@ -91,7 +91,7 @@ const GallerySection: React.FC = () => {
         </h1>
 
         <p
-          className="text-gray-700 mb-6 sm:mb-7 md:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl"
+          className="text-gray-700 ml-0 md:ml-20 mb-6 sm:mb-7 md:mb-8 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl"
           data-aos="fade-up"
           data-aos-delay="800"
         >
@@ -102,7 +102,7 @@ const GallerySection: React.FC = () => {
         </p>
 
         <div
-          className="flex gap-4 sm:gap-6 flex-wrap"
+          className="flex gap-4 ml-0 md:ml-20 sm:gap-6 flex-wrap"
           data-aos="fade-up"
           data-aos-delay="1000"
         >

@@ -1,8 +1,13 @@
-import React, { useEffect } from "react";
+// HeroSection.tsx
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import heroImg from "../../../assets/images/heroimg/hero_03.png";
+import ReadMoreModal from "./ReadMoreModal"; // Import the modal component
 
 const HeroSection: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   useEffect(() => {
     // Initialize AOS
     AOS.init({
@@ -25,165 +30,161 @@ const HeroSection: React.FC = () => {
     };
   }, []);
 
+  const handleReadMoreClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div
-      className="flex flex-col lg:flex-row min-h-screen w-full relative overflow-hidden"
-      style={{
-        backgroundImage:
-          "url('https://cms.khaitanco.com/sites/default/files/images/03-Expertise_1_0.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      {/* Animated background overlay */}
+    <>
       <div
-        className="absolute inset-0 bg-blue-900/10"
-        data-aos="fade"
-        data-aos-duration="1500"
-      ></div>
-
-      {/* Left content section with white background at 50% opacity */}
-      <div
-        className="w-full lg:w-1/2 pt-40 sm:pt-20 md:pt-24 lg:pt-32 px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col justify-start relative min-h-screen lg:min-h-auto"
-        style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
-        data-aos="slide-right"
-        data-aos-duration="1200"
+        className="flex flex-col lg:flex-row min-h-screen w-full relative overflow-hidden"
+        style={{
+          backgroundImage: `url(${heroImg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
-        <div className="mb-3 sm:mb-4" data-aos="fade-down" data-aos-delay="400">
-          <span className="text-blue-600 font-medium text-sm sm:text-base">
-            Expertise
-          </span>
-        </div>
-
-        <h1
-          className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-blue-800 mb-4 sm:mb-5 md:mb-6 leading-tight"
-          data-aos="fade-up"
-          data-aos-delay="600"
-          data-aos-duration="1000"
-        >
-          Facilitating commercial legal solutions
-        </h1>
-
-        <p
-          className="text-gray-700 mb-6 sm:mb-7 md:mb-8 text-sm sm:text-base leading-relaxed"
-          data-aos="fade-up"
-          data-aos-delay="800"
-        >
-          Our law firm includes a panel of experienced legal professionals,
-          including advocates, barristers, and solicitors, who specialize in
-          tax, VAT, labor, corporate, civil, criminal, writ, and family law. We
-          have extensive experience in handling a wide range of legal matters,
-          with a high success rate.
-        </p>
-
+        {/* Animated background overlay */}
         <div
-          className="flex flex-col sm:flex-row gap-4 sm:gap-6 flex-wrap"
-          data-aos="fade-up"
-          data-aos-delay="1000"
-        >
-          <button
-            className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base"
-            data-aos="zoom-in"
-            data-aos-delay="1200"
-          >
-            <span className="relative z-10">EXPLORE PRACTICE AREAS</span>
-            <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
-              <svg
-                width="16"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="sm:w-[18px] sm:h-[16px]"
-              >
-                <path
-                  d="M5 12H19M19 12L12 5M19 12L12 19"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="group-hover:text-white transition-colors duration-300"
-                />
-              </svg>
-            </span>
-            <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            <style>
-              {`
-                .group:hover {
-                  color: white;
-                }
-              `}
-            </style>
-          </button>
-
-          <button
-            className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base"
-            data-aos="zoom-in"
-            data-aos-delay="1400"
-          >
-            <span className="relative z-10">EXPLORE FOCUS AREAS</span>
-            <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
-              <svg
-                width="16"
-                height="14"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                className="sm:w-[18px] sm:h-[16px]"
-              >
-                <path
-                  d="M5 12H19M19 12L12 5M19 12L12 19"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="group-hover:text-white transition-colors duration-300"
-                />
-              </svg>
-            </span>
-            <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
-            <style>{`
-              .group:hover {
-                color: white;
-              }
-            `}</style>
-          </button>
-        </div>
-
-        {/* <div 
-          className="mt-auto pb-4 text-xs text-gray-500"
+          className="absolute inset-0 bg-blue-900/10"
           data-aos="fade"
-          data-aos-delay="1600"
+          data-aos-duration="1500"
+        ></div>
+
+        {/* Left content section with white background at 50% opacity */}
+        <div
+          className="w-full lg:w-1/2 pt-40 sm:pt-20 md:pt-24 lg:pt-32 px-6 sm:px-8 md:px-10 lg:px-12 flex flex-col justify-start relative min-h-screen lg:min-h-auto"
+          style={{ backgroundColor: "rgba(255, 255, 255, 0.5)" }}
+          data-aos="slide-right"
+          data-aos-duration="1200"
         >
-          © Khaitan & Co 2025
-        </div> */}
-      </div>
+          <div className="mb-3 sm:mb-4" data-aos="fade-down" data-aos-delay="400">
+            <span className="text-blue-600 font-medium text-sm sm:text-base">
+              Expertise
+            </span>
+          </div>
 
-      {/* Right section with subtle reveal animation - hidden on mobile and tablet */}
-      <div
-        className="hidden lg:block w-1/2 relative"
-        data-aos="fade-left"
-        data-aos-duration="1500"
-        data-aos-delay="300"
-      >
-        {/* Decorative elements can be added here if needed */}
-      </div>
+          <h1
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-bold text-blue-800 mb-4 sm:mb-5 md:mb-6 leading-tight"
+            data-aos="fade-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            Facilitating commercial legal solutions
+          </h1>
 
-      {/* Animated scroll indicator */}
-      {/* <div 
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center"
-        data-aos="fade-up"
-        data-aos-delay="2000"
-        data-aos-offset="0"
-      >
-        <span className="text-white text-sm mb-2">Scroll Down</span>
-        <div className="w-8 h-14 border-2 border-white rounded-full flex justify-center pt-2">
-          <div className="w-1.5 h-3 bg-white rounded-full animate-bounce"></div>
+          <p
+            className="text-gray-700 mb-6 sm:mb-7 md:mb-8 text-sm sm:text-base leading-relaxed"
+            data-aos="fade-up"
+            data-aos-delay="800"
+          >
+            I am <span className="font-bold">Md. Abdullah Al Mamun</span>, an
+            Advocate of the{" "}
+            <span className="font-bold">Supreme Court of Bangladesh</span> and the
+            head of this law firm. I was born into a respected Muslim family in
+            the village of Beneyali, under Jhikargacha Upazila of Jessore
+            District. My family background is primarily agricultural. <br /> I
+            completed my secondary education from a village school, followed by
+            higher secondary education from the renowned Jessore Cantonment
+            College. I then pursued my undergraduate studies at Michael Madhusudan
+            Dutta College and earned my{" "}
+            <span className="font-bold">
+              LL.B. degree from Northern University
+            </span>
+            . After passing the bar exam, I started my legal career at the Dhaka
+            Bar Association, and eventually became a regular advocate of the
+            Supreme Court of Bangladesh.{" "}
+            <button
+              onClick={handleReadMoreClick}
+              className="text-blue-800 font-bold cursor-pointer hover:text-blue-600 transition-colors duration-200 underline underline-offset-2 hover:underline-offset-4"
+            >
+              Read More
+            </button>
+          </p>
+
+          <div
+            className="flex flex-col sm:flex-row gap-4 sm:gap-6 flex-wrap"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+          >
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1200"
+            >
+              <span className="relative z-10">EXPLORE PRACTICE AREAS</span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+            </button>
+
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">EXPLORE FOCUS AREAS</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+          </div>
         </div>
-      </div> */}
-    </div>
+
+        {/* Right section with subtle reveal animation - hidden on mobile and tablet */}
+        <div
+          className="hidden lg:block w-1/2 relative"
+          data-aos="fade-left"
+          data-aos-duration="1500"
+          data-aos-delay="300"
+        >
+          {/* Decorative elements can be added here if needed */}
+        </div>
+      </div>
+
+      {/* Read More Modal */}
+      <ReadMoreModal 
+        isOpen={isModalOpen} 
+        onClose={handleCloseModal} 
+      />
+    </>
   );
 };
 
