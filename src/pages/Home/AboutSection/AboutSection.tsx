@@ -82,7 +82,7 @@ const AboutSection: React.FC = () => {
           {/* Left Content */}
           <div className="w-full lg:w-1/2 space-y-8">
             <h2
-              className="text-4xl md:text-5xl -mt-6 font-light text-amber-300 leading-tight"
+              className="text-4xl md:text-5xl -mt-6 font-semibold text-indigo-600 capitalize leading-tight"
               data-aos="fade-right"
               data-aos-delay="100"
             >
@@ -108,7 +108,7 @@ const AboutSection: React.FC = () => {
                   strokeWidth="2"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-amber-300"
+                  className="text-indigo-700"
                 >
                   <path d="M18 8h1a4 4 0 0 1 0 8h-1"></path>
                   <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path>
@@ -125,11 +125,13 @@ const AboutSection: React.FC = () => {
               data-aos="fade-up"
               data-aos-delay="300"
             >
-              I am Md. Abdullah Al Mamun, an Advocate of the Supreme Court of
-              Bangladesh and the head of this law firm. I was born into a
-              respected Muslim family in the village of Beneyali, under
-              Jhikargacha Upazila of Jessore District. My family background is
-              primarily agricultural.
+              Our law firm includes a panel of experienced legal professionals,
+              including advocates, barristers, and solicitors, who specialize in
+              tax, VAT, labor, corporate, civil, criminal, writ, and family law.
+              We have extensive experience in handling a wide range of legal
+              matters, with a high success rate. Every member of our firm is
+              known for their transparency, competence, and dedication, which
+              has earned us a strong reputation.
             </p>
 
             <div className="space-y-3">

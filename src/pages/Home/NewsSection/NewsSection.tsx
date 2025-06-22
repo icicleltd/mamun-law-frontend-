@@ -81,7 +81,7 @@ const NewsSection: React.FC = () => {
               modules={[Autoplay, Navigation, Pagination]}
               spaceBetween={24}
               slidesPerView={1}
-              pagination={{ clickable: true }}
+              // pagination={{ clickable: true }}
               //   autoplay={{
               //     delay: 4000,
               //     disableOnInteraction: false,
@@ -108,7 +108,7 @@ const NewsSection: React.FC = () => {
                           height="100%"
                           src={`https://www.youtube.com/embed/${interview.videoId}`}
                           title={interview.title}
-                          className="w-full h-[200px] md:h-[250px] lg:h-[250px] "
+                          className="w-full h-[200px] md:h-[250px] lg:h-[300px] "
                           allowFullScreen
                         />
                       </div>
