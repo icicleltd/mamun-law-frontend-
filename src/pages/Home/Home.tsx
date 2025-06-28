@@ -6,8 +6,8 @@ import GallerySection from "./GallerySection/GallerySection";
 import NewsSection from "./NewsSection/NewsSection";
 import StickySocialIcons from "./StickySocialIcons/StickySocialIcons"; // Import the new component
 import TeamSection from "./TeamSection/TeamSection";
-import ServicesSection from "./ServicesSection/ServicesSection";
-import GalleryTabSection from "../Gallery/GalleryTabSection/GalleryTabSection";
+// import ServicesSection from "./ServicesSection/ServicesSection";
+// import GalleryTabSection from "../Gallery/GalleryTabSection/GalleryTabSection";
 // import TeamS
 
 const Home: React.FC = () => {

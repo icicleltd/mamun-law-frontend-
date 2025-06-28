@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import BannnerImg from "../../../assets/images/event_05.jpeg";
 import image_02 from "../../../assets/images/event_01.jpeg";
