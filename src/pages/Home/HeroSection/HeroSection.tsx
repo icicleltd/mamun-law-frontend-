@@ -63,7 +63,11 @@ const HeroSection: React.FC = () => {
           data-aos="slide-right"
           data-aos-duration="1200"
         >
-          <div className="mb-3 sm:mb-4" data-aos="fade-down" data-aos-delay="400">
+          <div
+            className="mb-3 sm:mb-4"
+            data-aos="fade-down"
+            data-aos-delay="400"
+          >
             <span className="text-blue-600 font-medium text-sm sm:text-base">
               Expertise
             </span>
@@ -78,46 +82,17 @@ const HeroSection: React.FC = () => {
             Facilitating commercial legal solutions
           </h1>
 
-          <p
-            className="text-gray-700 mb-6 sm:mb-7 md:mb-8 text-sm sm:text-base leading-relaxed"
-            data-aos="fade-up"
-            data-aos-delay="800"
-          >
-            I am <span className="font-bold">Md. Abdullah Al Mamun</span>, an
-            Advocate of the{" "}
-            <span className="font-bold">Supreme Court of Bangladesh</span> and the
-            head of this law firm. I was born into a respected Muslim family in
-            the village of Beneyali, under Jhikargacha Upazila of Jessore
-            District. My family background is primarily agricultural. <br /> I
-            completed my secondary education from a village school, followed by
-            higher secondary education from the renowned Jessore Cantonment
-            College. I then pursued my undergraduate studies at Michael Madhusudan
-            Dutta College and earned my{" "}
-            <span className="font-bold">
-              LL.B. degree from Northern University
-            </span>
-            . After passing the bar exam, I started my legal career at the Dhaka
-            Bar Association, and eventually became a regular advocate of the
-            Supreme Court of Bangladesh.{" "}
-            <button
-              onClick={handleReadMoreClick}
-              className="text-blue-800 font-bold cursor-pointer hover:text-blue-600 transition-colors duration-200 underline underline-offset-2 hover:underline-offset-4"
-            >
-              Read More
-            </button>
-          </p>
-
           <div
-            className="flex flex-col sm:flex-row gap-4 sm:gap-6 flex-wrap"
+            className="grid grid-cols-2 gap-4"
             data-aos="fade-up"
             data-aos-delay="1000"
           >
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 col-span-2 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1200"
             >
-              <span className="relative z-10">EXPLORE PRACTICE AREAS</span>
+              <span className="relative z-10">Writ & Fundamental Rights</span>
               <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                 <svg
@@ -144,7 +119,189 @@ const HeroSection: React.FC = () => {
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
-              <span className="relative z-10">EXPLORE FOCUS AREAS</span>
+              <span className="relative z-10">Criminal Matter</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">Civil Matter</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">Family Matter</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">Vat & Tax</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">Company Matter</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">Custom</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">Arbitration</span>
+              <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
+                <svg
+                  width="16"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="sm:w-[18px] sm:h-[16px]"
+                >
+                  <path
+                    d="M5 12H19M19 12L12 5M19 12L12 19"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </span>
+              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+            </button>
+            <button
+              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              data-aos="zoom-in"
+              data-aos-delay="1400"
+            >
+              <span className="relative z-10">Laber Law</span>
               <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                 <svg
                   width="16"
@@ -180,10 +337,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Read More Modal */}
-      <ReadMoreModal 
-        isOpen={isModalOpen} 
-        onClose={handleCloseModal} 
-      />
+      <ReadMoreModal isOpen={isModalOpen} onClose={handleCloseModal} />
     </>
   );
 };
