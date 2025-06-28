@@ -30,9 +30,9 @@ const HeroSection: React.FC = () => {
     };
   }, []);
 
-  const handleReadMoreClick = () => {
-    setIsModalOpen(true);
-  };
+  // const handleReadMoreClick = () => {
+  //   setIsModalOpen(true);
+  // };
 
   const handleCloseModal = () => {
     setIsModalOpen(false);

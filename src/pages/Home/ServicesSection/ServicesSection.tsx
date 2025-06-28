@@ -30,10 +30,10 @@ interface LegalServicesProps {
 
 const ServicesSection: React.FC<LegalServicesProps> = ({ 
   defaultTab = 'writ',
-  contactInfo = {
-    phone: '+8801713992110',
-    email: 'legalmamun@gmail.com'
-  }
+  // contactInfo = {
+  //   phone: '+8801713992110',
+  //   email: 'legalmamun@gmail.com'
+  // }
 }) => {
   const [activeTab, setActiveTab] = useState<ServiceKey>(defaultTab);
 
@@ -227,13 +227,13 @@ const ServicesSection: React.FC<LegalServicesProps> = ({
     setActiveTab(serviceKey);
   };
 
-  const handlePhoneClick = (): void => {
-    window.location.href = `tel:${contactInfo.phone}`;
-  };
+  // const handlePhoneClick = (): void => {
+  //   window.location.href = `tel:${contactInfo.phone}`;
+  // };
 
-  const handleEmailClick = (): void => {
-    window.location.href = `mailto:${contactInfo.email}`;
-  };
+  // const handleEmailClick = (): void => {
+  //   window.location.href = `mailto:${contactInfo.email}`;
+  // };
 
   return (
     <div className="max-w-7xl mx-auto p-6 bg-gray-50 min-h-screen">
