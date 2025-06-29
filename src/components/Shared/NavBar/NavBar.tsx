@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import logo from "../../../assets/images/logo.jpeg";
 import { Link } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 import Swal from "sweetalert2";
 
 // Contact Modal Types
@@ -298,6 +299,7 @@ const NavBar: React.FC = () => {
   const [contactModalOpen, setContactModalOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState("hero");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -335,6 +337,10 @@ const NavBar: React.FC = () => {
     setMobileMenuOpen(false);
   };
 
+  const handleSetActive = (section: string) => {
+    setActiveSection(section);
+  };
+
   return (
     <>
       <nav
@@ -347,42 +353,58 @@ const NavBar: React.FC = () => {
         }`}
       >
         {/* Desktop Navigation */}
-        <div className="hidden lg:flex mx-auto py-4  justify-between items-center">
+        <div className="hidden lg:flex mx-auto py-4 justify-between items-center">
           {/* Left side - Navigation Links */}
           <div className="flex items-center space-x-8">
-            <a
-              href="#"
-              className={`font-semibold text-sm tracking-wider transition-all duration-300 relative group ${
+            <ScrollLink
+              to="hero"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onSetActive={() => handleSetActive("hero")}
+              className={`font-semibold text-sm tracking-wider transition-all duration-300 relative group cursor-pointer ${
                 scrolled
-                  ? "text-gray-700 hover:text-blue-600"
-                  : "text-white hover:text-blue-300"
-              }`}
+                  ? "text-orange-700 hover:text-orange-600"
+                  : "text-orange-700 hover:text-orange-300"
+              } ${activeSection === "hero" ? "text-blue-600" : ""}`}
             >
               HOME
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a
-              href="#"
-              className={`font-semibold text-sm tracking-wider transition-all duration-300 relative group ${
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                activeSection === "hero" ? "w-full" : "w-0 group-hover:w-full"
+              }`}></span>
+            </ScrollLink>
+            
+            <ScrollLink
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={500}
+              onSetActive={() => handleSetActive("about")}
+              className={`font-semibold text-sm tracking-wider transition-all duration-300 relative group cursor-pointer ${
                 scrolled
-                  ? "text-gray-700 hover:text-blue-600"
-                  : "text-white hover:text-blue-300"
-              }`}
+                  ? "text-orange-700 hover:text-orange-600"
+                  : "text-orange-700 hover:text-orange-300"
+              } ${activeSection === "about" ? "text-blue-600" : ""}`}
             >
               ABOUT
-              <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
-            <a
-              href="#"
-              className={`font-semibold text-sm tracking-wider transition-all duration-300 relative group ${
+              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                activeSection === "about" ? "w-full" : "w-0 group-hover:w-full"
+              }`}></span>
+            </ScrollLink>
+            
+            <button
+              onClick={() => setContactModalOpen(true)}
+              className={`font-semibold text-sm tracking-wider transition-all duration-300 relative group cursor-pointer ${
                 scrolled
-                  ? "text-gray-700 hover:text-blue-600"
-                  : "text-white hover:text-blue-300"
+                  ? "text-orange-700 hover:text-orange-600"
+                  : "text-orange-700 hover:text-orange-300"
               }`}
             >
               CONTACT
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+            </button>
 
             {/* Elegant Divider */}
             <div className="flex items-center space-x-3 group ml-4">
@@ -419,13 +441,13 @@ const NavBar: React.FC = () => {
             <button
               className={`relative overflow-hidden font-semibold px-6 xl:px-8 py-3 text-sm xl:text-base transition-all duration-300 transform hover:scale-105 hover:shadow-lg group ${
                 scrolled
-                  ? "border-2 border-gray-300 text-gray-700 hover:border-blue-500 hover:text-blue-600"
-                  : "border-2 border-white text-white hover:bg-white hover:text-blue-600"
+                  ? "border-2 border-white text-white hover:border-orange-500 hover:text-white"
+                  : "border-2 border-white text-white hover:bg-white hover:text-white"
               }`}
               onClick={() => setContactModalOpen(true)}
             >
               <span className="relative z-10">APPOINTMENT</span>
-              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-blue-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
             <Link to={"/login"}>
               <button className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 xl:px-8 py-3 text-sm xl:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group">
@@ -504,30 +526,52 @@ const NavBar: React.FC = () => {
           >
             <div className="px-6 py-6 space-y-4">
               {/* Navigation Links */}
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-blue-600 font-semibold py-3 transition-all duration-200 border-b border-gray-100 last:border-b-0 relative group"
+              <ScrollLink
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className={`block text-orange-700 hover:text-blue-600 font-semibold py-3 transition-all duration-200 border-b border-gray-100 last:border-b-0 relative group cursor-pointer ${
+                  activeSection === "hero" ? "text-blue-600" : ""
+                }`}
                 onClick={closeMobileMenu}
+                onSetActive={() => handleSetActive("hero")}
               >
                 HOME
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-blue-600 font-semibold py-3 transition-all duration-200 border-b border-gray-100 last:border-b-0 relative group"
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                  activeSection === "hero" ? "w-full" : "w-0 group-hover:w-full"
+                }`}></span>
+              </ScrollLink>
+              
+              <ScrollLink
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className={`block text-gray-700 hover:text-blue-600 font-semibold py-3 transition-all duration-200 border-b border-gray-100 last:border-b-0 relative group cursor-pointer ${
+                  activeSection === "about" ? "text-blue-600" : ""
+                }`}
                 onClick={closeMobileMenu}
+                onSetActive={() => handleSetActive("about")}
               >
                 ABOUT
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
-              <a
-                href="#"
-                className="block text-gray-700 hover:text-blue-600 font-semibold py-3 transition-all duration-200 border-b border-gray-100 last:border-b-0 relative group"
-                onClick={closeMobileMenu}
+                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                  activeSection === "about" ? "w-full" : "w-0 group-hover:w-full"
+                }`}></span>
+              </ScrollLink>
+              
+              <button
+                className="block text-gray-700 hover:text-blue-600 font-semibold py-3 transition-all duration-200 border-b border-gray-100 last:border-b-0 relative group w-full text-left"
+                onClick={() => {
+                  setContactModalOpen(true);
+                  closeMobileMenu();
+                }}
               >
                 CONTACT
                 <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 group-hover:w-full"></span>
-              </a>
+              </button>
 
               {/* Enhanced Mobile Buttons */}
               <div className="pt-6 space-y-4 border-t border-gray-200">

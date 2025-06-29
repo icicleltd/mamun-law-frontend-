@@ -79,7 +79,7 @@ const HeroSection: React.FC = () => {
             data-aos-delay="600"
             data-aos-duration="1000"
           >
-            Facilitating commercial legal solutions
+            Facilitating legal solutions
           </h1>
 
           <div
@@ -88,12 +88,12 @@ const HeroSection: React.FC = () => {
             data-aos-delay="1000"
           >
             <button
-              className="px-4 col-span-2 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 col-span-2 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1200"
             >
               <span className="relative z-10">Writ & Fundamental Rights</span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
               <span className="relative z-10 ml-2 transform group-hover:translate-x-1 transition-transform duration-300">
                 <svg
                   width="16"
@@ -115,7 +115,7 @@ const HeroSection: React.FC = () => {
             </button>
 
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -138,10 +138,10 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -164,10 +164,10 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -190,10 +190,10 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -216,10 +216,10 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -242,10 +242,10 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -268,10 +268,10 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -294,10 +294,10 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
             <button
-              className="px-4 sm:px-6 py-3 border-2 border-blue-800 text-blue-800 font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
+              className="px-4 sm:px-6 py-3 border-2 border-blue-600 hover:border-orange-600 text-black font-medium flex items-center justify-center group relative overflow-hidden text-sm sm:text-base hover:text-white transition-colors duration-300"
               data-aos="zoom-in"
               data-aos-delay="1400"
             >
@@ -320,7 +320,7 @@ const HeroSection: React.FC = () => {
                   />
                 </svg>
               </span>
-              <span className="absolute inset-0 bg-blue-800 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
+              <span className="absolute inset-0 bg-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></span>
             </button>
           </div>
         </div>
