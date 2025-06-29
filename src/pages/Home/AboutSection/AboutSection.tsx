@@ -81,7 +81,7 @@ const AboutSection: React.FC = () => {
 
   return (
     <>
-      <div className="bg-white py-20">
+      <div className="bg-white py-6">
         <div className="container mx-auto px-6">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Left Content */}
@@ -91,9 +91,7 @@ const AboutSection: React.FC = () => {
                 data-aos="fade-right"
                 data-aos-delay="100"
               >
-                Committed to helping our
-                <br />
-                clients succeed
+                Committed to clients succeed
               </h2>
 
               <div
@@ -139,107 +137,7 @@ const AboutSection: React.FC = () => {
                 and dedication, which has earned us a strong reputation.
               </p>
 
-              <div className="space-y-3">
-                <div
-                  className="flex items-start"
-                  data-aos="fade-up"
-                  data-aos-delay="400"
-                >
-                  <div className="text-red-600 mr-4 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <p className="text-gray-700 font-medium">
-                    Specializing in diverse immigration pathways.
-                  </p>
-                </div>
-
-                <div
-                  className="flex items-start"
-                  data-aos="fade-up"
-                  data-aos-delay="500"
-                >
-                  <div className="text-red-600 mr-4 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <p className="text-gray-700 font-medium">
-                    Expertise in family and work visas.
-                  </p>
-                </div>
-
-                <div
-                  className="flex items-start"
-                  data-aos="fade-up"
-                  data-aos-delay="600"
-                >
-                  <div className="text-red-600 mr-4 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <p className="text-gray-700 font-medium">
-                    Skilled in permanent residency applications.
-                  </p>
-                </div>
-
-                <div
-                  className="flex items-start"
-                  data-aos="fade-up"
-                  data-aos-delay="700"
-                >
-                  <div className="text-red-600 mr-4 mt-1">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    >
-                      <polyline points="20 6 9 17 4 12"></polyline>
-                    </svg>
-                  </div>
-                  <p className="text-gray-700 font-medium">
-                    Personalized consultation for every client.
-                  </p>
-                </div>
-              </div>
+              
 
               <div
                 className="flex flex-col sm:flex-row gap-6 items-center"
@@ -379,7 +277,7 @@ const AboutSection: React.FC = () => {
                 <img
                   src={personalImg}
                   alt="personal"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-[700px]"
                 />
                 {/* <div className="absolute inset-0 bg-gradient-to-t from-amber-900/50 to-transparent"></div> */}
               </div>
