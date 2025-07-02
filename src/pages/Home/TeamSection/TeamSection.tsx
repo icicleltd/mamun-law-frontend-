@@ -1,31 +1,55 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
+import imam_hosain from "../../../assets/images/Teams/imam_advocate.jpg"
+import meraz_img from "../../../assets/images/Teams/meraj_advocate.jpg"
+import anisur_img from "../../../assets/images/Teams/Anisur_advocate.jpg"
+import baset_img from "../../../assets/images/Teams/Baset_advocate.jpg"
+import monirul_img from "../../../assets/images/Teams/Monirul_advocate.jpg"
+import sumaia_img from "../../../assets/images/Teams/Parvin_advocate.jpg"
 
 const TeamSection: React.FC = () => {
   const teamMembers = [
     {
-      name: "Robert Chen, Esq.",
-      position: "Senior Partner",
+      name: "Sayed Imam Hossain(Moin)",
+      position: "Advocate",
       description:
-        "Specializing in corporate law with 15+ years experience, Robert has successfully handled high-profile mergers and acquisitions for Fortune 500 companies.",
-      image:
-        "https://images.pexels.com/photos/5668789/pexels-photo-5668789.jpeg",
+        "M.Sc (Geography), LLB(Hon's), University of London UK, Leading to Barrister-at-Law",
+      image: imam_hosain,
     },
     {
-      name: "Amanda Rodriguez, JD",
-      position: "Managing Partner",
-      description:
-        "With expertise in intellectual property law, Amanda has represented tech startups and entertainment companies in landmark copyright cases.",
+      name: "Md. Meraz Sarder",
+      position: "Advocate Supreme Court of Bangladesh",
+      description: "Barrister-at-Law (Lincoln'Inn, London), LL.M BPP University, UK, B.T.C BPP University, UK, LL.B(Hon's) University of London, UK",
       image:
-        "https://media.istockphoto.com/id/1424912588/photo/happy-successful-business-leader-in-glasses-head-shot.webp?a=1&b=1&s=612x612&w=0&k=20&c=6SJbK8gfF2BzoINEed16iD178Ouy7JIcSVq7z4fZ57Y=",
+        meraz_img,
     },
     {
-      name: "Marcus Johnson, LL.M",
-      position: "Litigation Director",
+      name: "Md Anisur Rahman Badsa",
+      position: "Advocate",
       description:
-        "Marcus leads our trial practice with an 85% success rate in complex civil litigation and white-collar criminal defense matters.",
-      image:
-        "https://plus.unsplash.com/premium_photo-1682095218963-4e9fa1162f20?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YWR2b2NhdGUlMjBwcm9maWxlfGVufDB8fDB8fHww",
+        "Anisur leads our trial practice with an 85% success rate in complex civil litigation and white-collar criminal defense matters.",
+      image: anisur_img
+    },
+    {
+      name: "Late Senior Advocate Abdul Baset Mojumder",
+      position: "Advocate",
+      description:
+        "Baset leads our trial practice with an 80% success rate in complex civil litigation and white-collar criminal defense matters.",
+      image: baset_img
+    },
+    {
+      name: "M. Monirul",
+      position: "Advocate",
+      description:
+        "Monirul leads our trial practice with an 80% success rate in complex civil litigation and white-collar criminal defense matters.",
+      image: monirul_img
+    },
+    {
+      name: "Sumaia Parvin Rimmy",
+      position: "Legal Adviser And Experts Family Matter",
+      description:
+        "Parvin leads our trial practice with an 80% success rate in Legal Adviser And Experts Family Matter.",
+      image: sumaia_img
     },
   ];
 
