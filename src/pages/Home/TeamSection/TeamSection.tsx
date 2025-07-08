@@ -3,9 +3,10 @@ import Marquee from "react-fast-marquee";
 import imam_hosain from "../../../assets/images/Teams/imam_advocate.jpg"
 import meraz_img from "../../../assets/images/Teams/meraj_advocate.jpg"
 import anisur_img from "../../../assets/images/Teams/Anisur_advocate.jpg"
-import baset_img from "../../../assets/images/Teams/Baset_advocate.jpg"
+// import baset_img from "../../../assets/images/Teams/Baset_advocate.jpg"
 import monirul_img from "../../../assets/images/Teams/Monirul_advocate.jpg"
 import sumaia_img from "../../../assets/images/Teams/Parvin_advocate.jpg"
+import foysal_img from "../../../assets/images/Teams/Foysal_kabir.jpg"
 
 const TeamSection: React.FC = () => {
   const teamMembers = [
@@ -31,11 +32,11 @@ const TeamSection: React.FC = () => {
       image: anisur_img
     },
     {
-      name: "Late Senior Advocate Abdul Baset Mojumder",
+      name: "Md. Foysal Kabir",
       position: "Advocate",
       description:
-        "Baset leads our trial practice with an 80% success rate in complex civil litigation and white-collar criminal defense matters.",
-      image: baset_img
+        "Foysal leads our trial practice with an 80% success rate in complex civil litigation and white-collar criminal defense matters.",
+      image: foysal_img
     },
     {
       name: "M. Monirul",
