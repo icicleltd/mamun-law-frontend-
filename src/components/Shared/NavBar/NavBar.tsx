@@ -370,11 +370,13 @@ const NavBar: React.FC = () => {
               } ${activeSection === "hero" ? "text-blue-600" : ""}`}
             >
               HOME
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
-                activeSection === "hero" ? "w-full" : "w-0 group-hover:w-full"
-              }`}></span>
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                  activeSection === "hero" ? "w-full" : "w-0 group-hover:w-full"
+                }`}
+              ></span>
             </ScrollLink>
-            
+
             <ScrollLink
               to="about"
               spy={true}
@@ -389,11 +391,15 @@ const NavBar: React.FC = () => {
               } ${activeSection === "about" ? "text-blue-600" : ""}`}
             >
               ABOUT
-              <span className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
-                activeSection === "about" ? "w-full" : "w-0 group-hover:w-full"
-              }`}></span>
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                  activeSection === "about"
+                    ? "w-full"
+                    : "w-0 group-hover:w-full"
+                }`}
+              ></span>
             </ScrollLink>
-            
+
             <button
               onClick={() => setContactModalOpen(true)}
               className={`font-semibold text-sm tracking-wider transition-all duration-300 relative group cursor-pointer ${
@@ -449,7 +455,10 @@ const NavBar: React.FC = () => {
               <span className="relative z-10">APPOINTMENT</span>
               <div className="absolute inset-0 bg-gradient-to-r from-orange-500 to-orange-600 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
             </button>
-            <Link to={"/login"}>
+            <Link
+              to={"https://mamun-law-dashboard.vercel.app/"}
+              target="_blank"
+            >
               <button className="relative overflow-hidden bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white font-semibold px-6 xl:px-8 py-3 text-sm xl:text-base transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl group">
                 <span className="relative z-10">LOGIN</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-800 to-blue-900 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
@@ -539,11 +548,15 @@ const NavBar: React.FC = () => {
                 onSetActive={() => handleSetActive("hero")}
               >
                 HOME
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
-                  activeSection === "hero" ? "w-full" : "w-0 group-hover:w-full"
-                }`}></span>
+                <span
+                  className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                    activeSection === "hero"
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
+                  }`}
+                ></span>
               </ScrollLink>
-              
+
               <ScrollLink
                 to="about"
                 spy={true}
@@ -557,11 +570,15 @@ const NavBar: React.FC = () => {
                 onSetActive={() => handleSetActive("about")}
               >
                 ABOUT
-                <span className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
-                  activeSection === "about" ? "w-full" : "w-0 group-hover:w-full"
-                }`}></span>
+                <span
+                  className={`absolute bottom-0 left-0 h-0.5 bg-gradient-to-r from-blue-500 to-blue-600 transition-all duration-300 ${
+                    activeSection === "about"
+                      ? "w-full"
+                      : "w-0 group-hover:w-full"
+                  }`}
+                ></span>
               </ScrollLink>
-              
+
               <button
                 className="block text-gray-700 hover:text-blue-600 font-semibold py-3 transition-all duration-200 border-b border-gray-100 last:border-b-0 relative group w-full text-left"
                 onClick={() => {
